@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(201, 199, 198);
+  margin: 0;
+  padding: 0%;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: repeat(5, 75px);
+  gap: 0.5rem;
+  background-color: rgb(53, 50, 50);
+  width: 320px;
+  height: 500px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  background-color: rgb(90, 196, 196);
+  color: rgb(0, 0, 0);
+  border: 0;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.7rem;
+}
+
+button:hover {
+  background-color: rgb(187, 250, 250);
+}
+
+.displayScreen {
+  grid-column: 1/-1;
+  margin: 10px 10px 20 px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: lightslategray;
+  border-radius: 15px;
+  word-break: break-all;
+}
+
+.previous-Number {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.current-Number {
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+}
+
+.expand {
+  grid-column: span 2;
+}
