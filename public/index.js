@@ -119,7 +119,7 @@ numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.appendNumber(button.innerText);
     calculator.updateDisplay();
-    onclick = numberSound.play();
+    numberSound.play();
   });
 });
 
@@ -127,20 +127,20 @@ operationButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.chooseOperation(button.innerText);
     calculator.updateDisplay();
-    onclick = operatorSound.play();
+    operatorSound.play();
   });
 });
 
 equalsButton.addEventListener("click", (button) => {
   calculator.compute();
   calculator.updateDisplay();
-  onclick = equalSound.play();
+  equalSound.play();
 });
 
 allClearButton.addEventListener("click", (button) => {
   calculator.clear();
   calculator.updateDisplay();
-  onclick = clearSound.play();
+  clearSound.play();
 });
 
 deleteButton.addEventListener("click", (button) => {

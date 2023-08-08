@@ -1,12 +1,42 @@
+html {
+  font-family: "Bungee", cursive;
+  color: rgb(249, 246, 246);
+  border-color: #363535;
+  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+    0px -1px 0px black;
+}
+
 body {
   background-color: rgb(201, 199, 198);
   margin: 0;
   padding: 0%;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 5px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin: 5px;
+  width: 100%;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
 .container {
   margin: auto;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
