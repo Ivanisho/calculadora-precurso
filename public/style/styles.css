@@ -27,8 +27,8 @@ body {
 }
 
 button {
-  background-color: rgb(90, 196, 196);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(#555353, #363535);
+  color: rgb(255, 255, 255);
   border: 0;
   padding: 1rem 0.5rem;
   display: flex;
@@ -36,10 +36,8 @@ button {
   align-items: center;
   cursor: pointer;
   border-radius: 0.7rem;
-}
-
-button:hover {
-  background-color: rgb(187, 250, 250);
+  box-shadow: inset 0 6px 1px 0 rgba(0, 0, 0, 0.35),
+    0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, 0.35);
 }
 
 .displayScreen {
@@ -67,4 +65,44 @@ button:hover {
 
 .expand {
   grid-column: span 2;
+}
+
+.operator {
+  background: rgb(244, 240, 24);
+  color: rgb(33, 33, 33);
+}
+
+.operator:hover {
+  background: rgb(255, 253, 161);
+  color: rgb(33, 33, 33);
+}
+
+.equal {
+  color: rgb(33, 33, 33);
+  background: rgb(5, 209, 94);
+}
+
+.equal:hover {
+  color: rgb(33, 33, 33);
+  background: rgb(0, 243, 142);
+}
+
+.special {
+  color: rgb(255, 255, 255);
+  background: rgb(173, 3, 3);
+}
+
+.special:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(233, 4, 4);
+}
+
+.number:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(102, 100, 100);
+}
+
+.dot:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(102, 100, 100);
 }
